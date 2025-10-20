@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog Cinema</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="height:var(--navbar-height);">
+    <div class="container">
+      <a class="navbar-brand" href="#">CinemaBlog</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#films">Film</a></li>
+          <li class="nav-item"><a class="nav-link" href="#work">Lavora con noi</a></li>
+          <li class="nav-item"><a class="nav-link" href="#footer">Contatti</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="hero" class="hero">
+    <div class="container">
+      <h1>Il tuo spazio sul Cinema</h1>
+      <p class="lead mt-3">Recensioni, novità e curiosità dal grande schermo</p>
+    </div>
+  </header>
+<main>
+  <section id="films" class="py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">Film sul sito</h2>
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <a href="https://www.rottentomatoes.com" target="_blank" rel="noopener">
+              <img src="sfondi/tre.png" class="card-img-top" alt="Film comico">
+            </a>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Tre uomini e una gamba</h5>
+              <p class="card-text text-muted mb-2">Il film segue le disavventure di Aldo, Giovanni e Giacomo, tre cognati molto diversi tra loro, in viaggio da Milano a Gallipoli in Puglia.</p>
+              <span class="mt-auto badge bg-danger">Commedia</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <a href="https://www.rottentomatoes.com" target="_blank" rel="noopener">
+              <img src="sfondi/shut.avif" class="card-img-top" alt="Film drama">
+            </a>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Shutter Island</h5>
+              <p class="card-text text-muted mb-2">Shutter Island di Martin Scorsese culmina in un epilogo che mette in discussione tutto ciò che lo spettatore ha creduto fino a quel momento. Dopo aver indagato per giorni sull’enigmatica sparizione di una paziente del manicomio criminale di Ashecliffe, Teddy Daniels (Leonardo DiCaprio) scopre una verità sconvolgente.</p>
+              <span class="mt-auto badge bg-success">Drammatico</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <a href="https://www.rottentomatoes.com" target="_blank" rel="noopener">
+              <img src="sfondi/madmax.jpg" class="card-img-top" alt="Film Fantascienza">
+            </a>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Mad Max</h5>
+              <p class="card-text text-muted mb-2">Ossessionato dal suo turbolento passato, Mad Max vaga solitario, fin quando si unisce ad un gruppo, guidato dall’imperatrice Furiosa in fuga attraverso la Terra Desolata.</p>
+              <span class="mt-auto badge bg-primary">Fantascienza</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-4 text-center">Lavora con noi</h2>
+
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+          <form id="contactForm" class="card p-4 shadow-sm">
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input required type="email" class="form-control" id="email" placeholder="tuo@email.com">
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input required type="password" class="form-control" id="password" placeholder="Password">
+            </div>
+            <div class="d-grid">
+              <button id="submitBtn" type="submit" class="btn btn-primary">Invia</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal fade" id="thankModal" tabindex="-1" aria-labelledby="thankModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="thankModalLabel">Messaggio inviato</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi"></button>
+        </div>
+        <div class="modal-body">
+          Grazie per averci contattato
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+  <footer id="footer" class="mt-5">
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-12 col-md-4">
+          <strong>P.IVA:</strong> 12345678901
+        </div>
+        <div class="col-12 col-md-4">
+          <strong>Proprietario:</strong> Cinema SRL - Via del Giangi 1, Venezia
+        </div>
+        <div class="col-12 col-md-4 text-md-end social">
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      const modalEl = document.getElementById('thankModal');
+      const modal = bootstrap.Modal.getOrCreateInstance(modalEl);
+      modal.show();
+
+      setTimeout(()=> form.reset(), 200);
+    });
+  </script>
+</body>
+</html>
