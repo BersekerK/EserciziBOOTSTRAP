@@ -4,9 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Blog Cinema</title>
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -29,101 +30,118 @@
 
   <header id="hero" class="hero">
     <div class="container">
-      <h1>Il tuo spazio sul Cinema</h1>
-      <p class="lead mt-3">Recensioni, novità e curiosità dal grande schermo</p>
+      <div class="row">
+        <div class="col-12 d-flex flex-column align-items-center justify-content-center">
+          <h1>Il tuo spazio sul Cinema</h1>
+          <p class="lead mt-3">Recensioni, novità e curiosità dal grande schermo</p>
+        </div>
+      </div>
     </div>
   </header>
-<main>
-  <section id="films" class="py-5">
-    <div class="container">
-      <h2 class="mb-4 text-center">Film sul sito</h2>
-      <div class="row g-4">
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm">
-            <a href="https://www.rottentomatoes.com" target="_blank" rel="noopener">
-              <img src="sfondi/tre.png" class="card-img-top" alt="Film comico">
-            </a>
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Tre uomini e una gamba</h5>
-              <p class="card-text text-muted mb-2">Il film segue le disavventure di Aldo, Giovanni e Giacomo, tre cognati molto diversi tra loro, in viaggio da Milano a Gallipoli in Puglia.</p>
-              <span class="mt-auto badge bg-danger">Commedia</span>
-            </div>
+
+  <main>
+    <section id="films" class="py-5">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-12">
+            <h2 class="text-center">Film sul sito</h2>
           </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm">
-            <a href="https://www.rottentomatoes.com" target="_blank" rel="noopener">
-              <img src="sfondi/shut.avif" class="card-img-top" alt="Film drama">
-            </a>
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Shutter Island</h5>
-              <p class="card-text text-muted mb-2">Shutter Island di Martin Scorsese culmina in un epilogo che mette in discussione tutto ciò che lo spettatore ha creduto fino a quel momento. Dopo aver indagato per giorni sull’enigmatica sparizione di una paziente del manicomio criminale di Ashecliffe, Teddy Daniels (Leonardo DiCaprio) scopre una verità sconvolgente.</p>
-              <span class="mt-auto badge bg-success">Drammatico</span>
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <a href="https://www.rottentomatoes.com" target="_blank" rel="noopener noreferrer">
+                <img src="sfondi/tre.png" class="card-img-top" alt="Tre uomini e una gamba">
+              </a>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Tre uomini e una gamba</h5>
+                <p class="card-text text-muted mb-2">Il film segue le disavventure di Aldo, Giovanni e Giacomo in viaggio da Milano a Gallipoli.</p>
+                <span class="mt-auto badge bg-warning text-dark">Commedia</span>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm">
-            <a href="https://www.rottentomatoes.com" target="_blank" rel="noopener">
-              <img src="sfondi/madmax.jpg" class="card-img-top" alt="Film Fantascienza">
-            </a>
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Mad Max</h5>
-              <p class="card-text text-muted mb-2">Ossessionato dal suo turbolento passato, Mad Max vaga solitario, fin quando si unisce ad un gruppo, guidato dall’imperatrice Furiosa in fuga attraverso la Terra Desolata.</p>
-              <span class="mt-auto badge bg-primary">Fantascienza</span>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <a href="https://www.rottentomatoes.com" target="_blank" rel="noopener noreferrer">
+                <img src="sfondi/shut.avif" class="card-img-top" alt="Shutter Island">
+              </a>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Shutter Island</h5>
+                <p class="card-text text-muted mb-2">Un'indagine che mette in crisi realtà e verità, diretto da Martin Scorsese.</p>
+                <span class="mt-auto badge bg-danger">Drammatico</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <a href="https://www.rottentomatoes.com" target="_blank" rel="noopener noreferrer">
+                <img src="sfondi/madmax.jpg" class="card-img-top" alt="Mad Max">
+              </a>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Mad Max</h5>
+                <p class="card-text text-muted mb-2">Ossessionato dal suo passato, Max si unisce a Furiosa in fuga nella Terra Desolata.</p>
+                <span class="mt-auto badge bg-primary">Fantascienza</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="work" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="mb-4 text-center">Lavora con noi</h2>
+    <section id="work" class="py-5 bg-light">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-12">
+            <h2 class="text-center">Lavora con noi</h2>
+          </div>
+        </div>
 
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-8 col-lg-6">
-          <form id="contactForm" class="card p-4 shadow-sm">
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input required type="email" class="form-control" id="email" placeholder="tuo@email.com">
-            </div>
-            <div class="mb-3">
-              <label for="password" class="form-label">Password</label>
-              <input required type="password" class="form-control" id="password" placeholder="Password">
-            </div>
-            <div class="d-grid">
-              <button id="submitBtn" type="submit" class="btn btn-primary">Invia</button>
-            </div>
-          </form>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6">
+            <form id="contactForm" class="card p-4 shadow-sm">
+              <div class="row">
+                <div class="col-12 mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input required type="email" class="form-control" id="email" placeholder="tuo@email.com">
+                </div>
+                <div class="col-12 mb-3">
+                  <label for="password" class="form-label">Password</label>
+                  <input required type="password" class="form-control" id="password" placeholder="Password">
+                </div>
+                <div class="col-12 d-grid">
+                  <button id="submitBtn" type="submit" class="btn btn-primary">Invia</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal fade" id="thankModal" tabindex="-1" aria-labelledby="thankModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="thankModalLabel">Messaggio inviato</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi"></button>
+          </div>
+          <div class="modal-body">
+            Grazie per averci contattato
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+          </div>
         </div>
       </div>
     </div>
-  </section>
+  </main>
 
-  <div class="modal fade" id="thankModal" tabindex="-1" aria-labelledby="thankModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="thankModalLabel">Messaggio inviato</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi"></button>
-        </div>
-        <div class="modal-body">
-          Grazie per averci contattato
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</main>
   <footer id="footer" class="mt-5">
     <div class="container">
-      <div class="row gy-3">
+      <div class="row gy-3 align-items-center">
         <div class="col-12 col-md-4">
           <strong>P.IVA:</strong> 12345678901
         </div>
@@ -131,9 +149,21 @@
           <strong>Proprietario:</strong> Cinema SRL - Via del Giangi 1, Venezia
         </div>
         <div class="col-12 col-md-4 text-md-end social">
-          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-          <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook CinemaBlog" title="Facebook" class="text-reset me-3">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram CinemaBlog" title="Instagram" class="text-reset me-3">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter CinemaBlog" title="Twitter" class="text-reset">
+            <i class="bi bi-twitter"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-12 text-center text-muted small">
+          &copy; <span id="year"></span> CinemaBlog. Tutti i diritti riservati.
         </div>
       </div>
     </div>
@@ -142,17 +172,18 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-
+    const yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
     const form = document.getElementById('contactForm');
-    form.addEventListener('submit', function(e){
-      e.preventDefault();
-      const modalEl = document.getElementById('thankModal');
-      const modal = bootstrap.Modal.getOrCreateInstance(modalEl);
-      modal.show();
-
-      setTimeout(()=> form.reset(), 200);
-    });
+    if (form) {
+      form.addEventListener('submit', function(e){
+        e.preventDefault();
+        const modalEl = document.getElementById('thankModal');
+        const modal = bootstrap.Modal.getOrCreateInstance(modalEl);
+        modal.show();
+        setTimeout(()=> form.reset(), 200);
+      });
+    }
   </script>
 </body>
 </html>
