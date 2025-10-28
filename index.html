@@ -17,12 +17,14 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navContent">
-        <ul class="navbar-nav ms-auto">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#films">Film</a></li>
-          <li class="nav-item"><a class="nav-link" href="#work">Lavora con noi</a></li>
-          <li class="nav-item"><a class="nav-link" href="#footer">Contatti</a></li>
+          <li class="nav-item"><a class="nav-link" href="#carouselSection">Highlights</a></li>
+          <li class="nav-item"><a class="nav-link" href="#work">Lavora</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
         </ul>
       </div>
     </div>
@@ -40,6 +42,7 @@
   </header>
 
   <main>
+
     <section id="films" class="py-5">
       <div class="container">
         <div class="row mb-4">
@@ -50,7 +53,7 @@
 
         <div class="row g-4">
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm">
+            <article class="card h-100 shadow-sm">
               <a href="https://www.rottentomatoes.com" target="_blank" rel="noopener noreferrer">
                 <img src="sfondi/tre.png" class="card-img-top" alt="Tre uomini e una gamba">
               </a>
@@ -59,11 +62,11 @@
                 <p class="card-text text-muted mb-2">Il film segue le disavventure di Aldo, Giovanni e Giacomo in viaggio da Milano a Gallipoli.</p>
                 <span class="mt-auto badge bg-warning text-dark">Commedia</span>
               </div>
-            </div>
+            </article>
           </div>
 
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm">
+            <article class="card h-100 shadow-sm">
               <a href="https://www.rottentomatoes.com" target="_blank" rel="noopener noreferrer">
                 <img src="sfondi/shut.avif" class="card-img-top" alt="Shutter Island">
               </a>
@@ -72,11 +75,11 @@
                 <p class="card-text text-muted mb-2">Un'indagine che mette in crisi realtà e verità, diretto da Martin Scorsese.</p>
                 <span class="mt-auto badge bg-danger">Drammatico</span>
               </div>
-            </div>
+            </article>
           </div>
 
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm">
+            <article class="card h-100 shadow-sm">
               <a href="https://www.rottentomatoes.com" target="_blank" rel="noopener noreferrer">
                 <img src="sfondi/madmax.jpg" class="card-img-top" alt="Mad Max">
               </a>
@@ -85,6 +88,63 @@
                 <p class="card-text text-muted mb-2">Ossessionato dal suo passato, Max si unisce a Furiosa in fuga nella Terra Desolata.</p>
                 <span class="mt-auto badge bg-primary">Fantascienza</span>
               </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="carouselSection" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center mb-4">In evidenza</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="sfondi/madmax.jpg" class="d-block w-100" alt="Mad Max">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Mad Max</h5>
+                    <p>Fuga, adrenalina e paesaggi post-apocalittici.</p>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <img src="sfondi/shut.avif" class="d-block w-100" alt="Shutter Island">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Shutter Island</h5>
+                    <p>Mistero e suspense in un'isola inquietante.</p>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <img src="sfondi/tre.png" class="d-block w-100" alt="Tre uomini e una gamba">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Tre uomini e una gamba</h5>
+                    <p>Commedia italiana cult per tutte le età.</p>
+                  </div>
+                </div>
+              </div>
+
+              <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Precedente</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Successivo</span>
+              </button>
             </div>
           </div>
         </div>
@@ -121,6 +181,61 @@
       </div>
     </section>
 
+    <section id="faq" class="py-5">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-12">
+            <h2 class="text-center">FAQ</h2>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8">
+            <div class="accordion" id="faqAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faqHeadingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne" aria-expanded="true" aria-controls="faqCollapseOne">
+                    Come posso inviare una recensione?
+                  </button>
+                </h2>
+                <div id="faqCollapseOne" class="accordion-collapse collapse show" aria-labelledby="faqHeadingOne" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Registrati o contattaci tramite il form "Lavora con noi" e ti forniremo le istruzioni per inviare contenuti.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faqHeadingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+                    Le immagini dei film sono cliccabili?
+                  </button>
+                </h2>
+                <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Sì: cliccando l'immagine di ogni film verrai reindirizzato a Rotten Tomatoes per maggiori informazioni.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faqHeadingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+                    Il sito è ottimizzato per mobile?
+                  </button>
+                </h2>
+                <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Sì: il layout sfrutta il grid system e i breakpoints di Bootstrap; aggiungi ulteriori media query in style.css se necessario.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <div class="modal fade" id="thankModal" tabindex="-1" aria-labelledby="thankModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -137,6 +252,7 @@
         </div>
       </div>
     </div>
+
   </main>
 
   <footer id="footer" class="mt-5">
@@ -160,12 +276,6 @@
           </a>
         </div>
       </div>
-
-      <div class="row mt-3">
-        <div class="col-12 text-center text-muted small">
-          &copy; <span id="year"></span> CinemaBlog. Tutti i diritti riservati.
-        </div>
-      </div>
     </div>
   </footer>
 
@@ -174,6 +284,7 @@
   <script>
     const yearEl = document.getElementById('year');
     if (yearEl) yearEl.textContent = new Date().getFullYear();
+
     const form = document.getElementById('contactForm');
     if (form) {
       form.addEventListener('submit', function(e){
